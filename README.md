@@ -1,33 +1,65 @@
-# Team Repo Template
+# Metastatic-AI
 
-This Repository includes a template for your assignments.
+Metastatic-AI is a Computer Vision Detection Web Platform that analyzes an input image of a metastatic tissue and output whether tissue is malignant or not. Built with Django and React.js, and it is hosted on Heroku. Machine Learning Model is developed with TensorFlow using Convolutional Neural Network and achieved 93% test accuracy. 
 
-Follow [these instructions](https://help.github.com/en/articles/creating-a-repository-from-a-template) to create a repo in the `dcsil` organization for your Assignment.
+A video demo can found here: 
 
-## Requirements
+The following diagram gives a high-level overview of the machine learning process:
+![ml pipeline](../product_research/unnamed2.jpg)
 
-You must [add the following topics](https://help.github.com/en/articles/classifying-your-repository-with-topics#adding-topics-to-your-repository) to the repository:
 
-- `F19` (indicates Fall 2019. If it is not Fall 2019, I forgot to update this. Please make a PR on this repo to update it to the appropriate term!)
-- `assignment`
+## Technologies employed
 
-### README template starts below this line 👇👇👇
+![ml pipeline](./tech.jpg)
 
-----
+We are using GCP as bridge between frontend/backend and ML model. Github is used for CI/CD. Finally, Heroku is used to deploy the app as a website.
 
-# narwh.Al
 
-![Team Logo](./NARWH_AI.png)
+### Architecture
+ 
+ ![Dashboard](./architecture.jpg)
+ 
+ Our Machine Learning Model is exported as a Class Object in our backend. Our React JS Frontend will fetch ML Prediction Score from our Django prediction object dynamically.
+ 
 
-narwh.Al is a company founded in the Healthcare industry. narwh.Al aims to VISION STATEMENT.
+### Setup script
 
-Table of Contents
----
+Run the following development setup script:
+    ../src/bootstrap.ps1
+https://github.com/dcsil/Narwhals/blob/master/src/boostrap.ps1
+    
+### Web app
 
-- [People](./team/)
-- [Diversity](./team/diversity.md)
-- [Product & Research](./product_research/)
-    - [Market](./product_research/market.md)
-    - [Roadmap](./product_research/roadmap.md)
-    - [User Validation and Roadmap](./product_research/UserValidation&Roadmap.md)
+ Visit our web app here: https://narwhals-ai.herokuapp.com/
+ 
+ Use Sample Images from this link to test our ML Image Anaysis Features:
+ https://github.com/dcsil/Narwhals/tree/master/app/images
+
+### Production
+
+#### Logging Setup
+
+ ![LogDNA](./LogDNA.jpg)
+
+#### Exception Tracking Setup
+
+ ![Sentry](./Sentry.jpg)
+
+#### Github CI Actions
+ ![GithubCI](./GithubCI.jpg)
+
+#### Database
+ ![Database](./Database.jpg)
+ 
+ #### Service Yaml 
+ 
+ https://github.com/dcsil/Narwhals/blob/master/app/service.yml
+ 
+ ## Build Plan
+
+We have developed a complete Gantt chart which lays out the detailed schedule we will be following towards our second MVP on May 31 2020:
+
+![gantt](./build.jpg)
+
+We hope to follow our timeline as close as possible and achieve the milestones mentioned.
 
