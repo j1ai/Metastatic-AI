@@ -4,7 +4,7 @@
 
 Metastatic-AI is a Computer Vision Detection Web Platform that analyzes an input image of a metastatic tissue and output whether tissue is malignant or not. Built with Django and React.js, and it is hosted on Heroku. Machine Learning Model is developed with TensorFlow using Convolutional Neural Network and achieved 93% test accuracy. 
 
-A video demo can found here: ![meta](./metastaticAI_MVP_Demo.mp4)
+A video demo can found here: (./metastaticAI_MVP_Demo.mp4)
 
 The following diagram gives a high-level overview of the machine learning process:
 ![ml pipeline](./product_research/unnamed2.jpg)
